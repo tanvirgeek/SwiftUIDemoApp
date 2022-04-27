@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB00AF8E2817B73300270C45 /* DemoTanvirMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AF8D2817B73300270C45 /* DemoTanvirMVVMApp.swift */; };
+		EB00AF902817B73300270C45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AF8F2817B73300270C45 /* ContentView.swift */; };
+		EB00AF922817B73500270C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB00AF912817B73500270C45 /* Assets.xcassets */; };
+		EB00AF952817B73500270C45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB00AF942817B73500270C45 /* Preview Assets.xcassets */; };
+		EB00AF9F2817B73500270C45 /* DemoTanvirMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AF9E2817B73500270C45 /* DemoTanvirMVVMTests.swift */; };
+		EB00AFA92817B73500270C45 /* DemoTanvirMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFA82817B73500270C45 /* DemoTanvirMVVMUITests.swift */; };
+		EB00AFAB2817B73500270C45 /* DemoTanvirMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFAA2817B73500270C45 /* DemoTanvirMVVMUITestsLaunchTests.swift */; };
+		EB00AFC12817C81E00270C45 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFC02817C81E00270C45 /* UserModel.swift */; };
+		EB00AFC32817C86C00270C45 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFC22817C86C00270C45 /* PostModel.swift */; };
+		EB00AFC52817CA5500270C45 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFC42817CA5500270C45 /* APIService.swift */; };
+		EB00AFC72817CB7600270C45 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFC62817CB7600270C45 /* EndPoint.swift */; };
+		EB00AFC92817CF3E00270C45 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFC82817CF3E00270C45 /* HomeView.swift */; };
+		EB00AFCB2817DEB800270C45 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFCA2817DEB800270C45 /* HomeViewModel.swift */; };
+		EB00AFCD2817E4CD00270C45 /* UserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFCC2817E4CD00270C45 /* UserCard.swift */; };
+		EB00AFD02817E61C00270C45 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFCF2817E61C00270C45 /* AppColors.swift */; };
+		EB00AFD32817F1C000270C45 /* Posts.json in Resources */ = {isa = PBXBuildFile; fileRef = EB00AFD22817F1C000270C45 /* Posts.json */; };
+		EB00AFD52817F30500270C45 /* Bundle+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFD42817F30500270C45 /* Bundle+Decoding.swift */; };
+		EB00AFD72817F3AE00270C45 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFD62817F3AE00270C45 /* MockData.swift */; };
+		EB00AFD82817FADD00270C45 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = EB00AFD12817F11E00270C45 /* Users.json */; };
+		EB00AFDA2818098B00270C45 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFD92818098B00270C45 /* PostListView.swift */; };
+		EB00AFDC281809D500270C45 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFDB281809D500270C45 /* PostListViewModel.swift */; };
+		EB00AFDE28180F1B00270C45 /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFDD28180F1B00270C45 /* PostCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB00AF9B2817B73500270C45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB00AF822817B73300270C45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB00AF892817B73300270C45;
+			remoteInfo = DemoTanvirMVVM;
+		};
+		EB00AFA52817B73500270C45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB00AF822817B73300270C45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB00AF892817B73300270C45;
+			remoteInfo = DemoTanvirMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB00AF8A2817B73300270C45 /* DemoTanvirMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoTanvirMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB00AF8D2817B73300270C45 /* DemoTanvirMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTanvirMVVMApp.swift; sourceTree = "<group>"; };
+		EB00AF8F2817B73300270C45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EB00AF912817B73500270C45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB00AF942817B73500270C45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB00AF9A2817B73500270C45 /* DemoTanvirMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTanvirMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB00AF9E2817B73500270C45 /* DemoTanvirMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTanvirMVVMTests.swift; sourceTree = "<group>"; };
+		EB00AFA42817B73500270C45 /* DemoTanvirMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTanvirMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB00AFA82817B73500270C45 /* DemoTanvirMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTanvirMVVMUITests.swift; sourceTree = "<group>"; };
+		EB00AFAA2817B73500270C45 /* DemoTanvirMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTanvirMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB00AFBF2817BF4900270C45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EB00AFC02817C81E00270C45 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		EB00AFC22817C86C00270C45 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		EB00AFC42817CA5500270C45 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		EB00AFC62817CB7600270C45 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		EB00AFC82817CF3E00270C45 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EB00AFCA2817DEB800270C45 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EB00AFCC2817E4CD00270C45 /* UserCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCard.swift; sourceTree = "<group>"; };
+		EB00AFCF2817E61C00270C45 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		EB00AFD12817F11E00270C45 /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
+		EB00AFD22817F1C000270C45 /* Posts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Posts.json; sourceTree = "<group>"; };
+		EB00AFD42817F30500270C45 /* Bundle+Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decoding.swift"; sourceTree = "<group>"; };
+		EB00AFD62817F3AE00270C45 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		EB00AFD92818098B00270C45 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		EB00AFDB281809D500270C45 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		EB00AFDD28180F1B00270C45 /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB00AF872817B73300270C45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB00AF972817B73500270C45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB00AFA12817B73500270C45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB00AF812817B73300270C45 = {
+			isa = PBXGroup;
+			children = (
+				EB00AF8C2817B73300270C45 /* DemoTanvirMVVM */,
+				EB00AF9D2817B73500270C45 /* DemoTanvirMVVMTests */,
+				EB00AFA72817B73500270C45 /* DemoTanvirMVVMUITests */,
+				EB00AF8B2817B73300270C45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB00AF8B2817B73300270C45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AF8A2817B73300270C45 /* DemoTanvirMVVM.app */,
+				EB00AF9A2817B73500270C45 /* DemoTanvirMVVMTests.xctest */,
+				EB00AFA42817B73500270C45 /* DemoTanvirMVVMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB00AF8C2817B73300270C45 /* DemoTanvirMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AFCE2817E60400270C45 /* Themes */,
+				EB00AFBF2817BF4900270C45 /* Info.plist */,
+				EB00AFBD2817B79000270C45 /* EndPoints */,
+				EB00AFBC2817B77900270C45 /* APIServices */,
+				EB00AFBB2817B77000270C45 /* Utilites */,
+				EB00AFBA2817B76700270C45 /* Extensions */,
+				EB00AFB92817B75E00270C45 /* ViewModels */,
+				EB00AFB82817B75300270C45 /* Models */,
+				EB00AFB72817B74600270C45 /* Views */,
+				EB00AF8D2817B73300270C45 /* DemoTanvirMVVMApp.swift */,
+				EB00AF8F2817B73300270C45 /* ContentView.swift */,
+				EB00AF912817B73500270C45 /* Assets.xcassets */,
+				EB00AF932817B73500270C45 /* Preview Content */,
+			);
+			path = DemoTanvirMVVM;
+			sourceTree = "<group>";
+		};
+		EB00AF932817B73500270C45 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AF942817B73500270C45 /* Preview Assets.xcassets */,
+				EB00AFD12817F11E00270C45 /* Users.json */,
+				EB00AFD22817F1C000270C45 /* Posts.json */,
+				EB00AFD62817F3AE00270C45 /* MockData.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB00AF9D2817B73500270C45 /* DemoTanvirMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AF9E2817B73500270C45 /* DemoTanvirMVVMTests.swift */,
+			);
+			path = DemoTanvirMVVMTests;
+			sourceTree = "<group>";
+		};
+		EB00AFA72817B73500270C45 /* DemoTanvirMVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AFA82817B73500270C45 /* DemoTanvirMVVMUITests.swift */,
+				EB00AFAA2817B73500270C45 /* DemoTanvirMVVMUITestsLaunchTests.swift */,
+			);
+			path = DemoTanvirMVVMUITests;
+			sourceTree = "<group>";
+		};
+		EB00AFB72817B74600270C45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AFBE2817B7A200270C45 /* Shared */,
+				EB00AFC82817CF3E00270C45 /* HomeView.swift */,
+				EB00AFD92818098B00270C45 /* PostListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB00AFB82817B75300270C45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AFC02817C81E00270C45 /* UserModel.swift */,
+				EB00AFC22817C86C00270C45 /* PostModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB00AFB92817B75E00270C45 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AFCA2817DEB800270C45 /* HomeViewModel.swift */,
+				EB00AFDB281809D500270C45 /* PostListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EB00AFBA2817B76700270C45 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AFD42817F30500270C45 /* Bundle+Decoding.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EB00AFBB2817B77000270C45 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		EB00AFBC2817B77900270C45 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AFC42817CA5500270C45 /* APIService.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		EB00AFBD2817B79000270C45 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AFC62817CB7600270C45 /* EndPoint.swift */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		EB00AFBE2817B7A200270C45 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AFCC2817E4CD00270C45 /* UserCard.swift */,
+				EB00AFDD28180F1B00270C45 /* PostCard.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EB00AFCE2817E60400270C45 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				EB00AFCF2817E61C00270C45 /* AppColors.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB00AF892817B73300270C45 /* DemoTanvirMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB00AFAE2817B73500270C45 /* Build configuration list for PBXNativeTarget "DemoTanvirMVVM" */;
+			buildPhases = (
+				EB00AF862817B73300270C45 /* Sources */,
+				EB00AF872817B73300270C45 /* Frameworks */,
+				EB00AF882817B73300270C45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoTanvirMVVM;
+			productName = DemoTanvirMVVM;
+			productReference = EB00AF8A2817B73300270C45 /* DemoTanvirMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB00AF992817B73500270C45 /* DemoTanvirMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB00AFB12817B73500270C45 /* Build configuration list for PBXNativeTarget "DemoTanvirMVVMTests" */;
+			buildPhases = (
+				EB00AF962817B73500270C45 /* Sources */,
+				EB00AF972817B73500270C45 /* Frameworks */,
+				EB00AF982817B73500270C45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB00AF9C2817B73500270C45 /* PBXTargetDependency */,
+			);
+			name = DemoTanvirMVVMTests;
+			productName = DemoTanvirMVVMTests;
+			productReference = EB00AF9A2817B73500270C45 /* DemoTanvirMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB00AFA32817B73500270C45 /* DemoTanvirMVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB00AFB42817B73500270C45 /* Build configuration list for PBXNativeTarget "DemoTanvirMVVMUITests" */;
+			buildPhases = (
+				EB00AFA02817B73500270C45 /* Sources */,
+				EB00AFA12817B73500270C45 /* Frameworks */,
+				EB00AFA22817B73500270C45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB00AFA62817B73500270C45 /* PBXTargetDependency */,
+			);
+			name = DemoTanvirMVVMUITests;
+			productName = DemoTanvirMVVMUITests;
+			productReference = EB00AFA42817B73500270C45 /* DemoTanvirMVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB00AF822817B73300270C45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					EB00AF892817B73300270C45 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					EB00AF992817B73500270C45 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = EB00AF892817B73300270C45;
+					};
+					EB00AFA32817B73500270C45 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = EB00AF892817B73300270C45;
+					};
+				};
+			};
+			buildConfigurationList = EB00AF852817B73300270C45 /* Build configuration list for PBXProject "DemoTanvirMVVM" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB00AF812817B73300270C45;
+			productRefGroup = EB00AF8B2817B73300270C45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB00AF892817B73300270C45 /* DemoTanvirMVVM */,
+				EB00AF992817B73500270C45 /* DemoTanvirMVVMTests */,
+				EB00AFA32817B73500270C45 /* DemoTanvirMVVMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB00AF882817B73300270C45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB00AFD82817FADD00270C45 /* Users.json in Resources */,
+				EB00AFD32817F1C000270C45 /* Posts.json in Resources */,
+				EB00AF952817B73500270C45 /* Preview Assets.xcassets in Resources */,
+				EB00AF922817B73500270C45 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB00AF982817B73500270C45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB00AFA22817B73500270C45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB00AF862817B73300270C45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB00AFDC281809D500270C45 /* PostListViewModel.swift in Sources */,
+				EB00AFC72817CB7600270C45 /* EndPoint.swift in Sources */,
+				EB00AFD72817F3AE00270C45 /* MockData.swift in Sources */,
+				EB00AFC92817CF3E00270C45 /* HomeView.swift in Sources */,
+				EB00AFDE28180F1B00270C45 /* PostCard.swift in Sources */,
+				EB00AFD52817F30500270C45 /* Bundle+Decoding.swift in Sources */,
+				EB00AF902817B73300270C45 /* ContentView.swift in Sources */,
+				EB00AFD02817E61C00270C45 /* AppColors.swift in Sources */,
+				EB00AFCB2817DEB800270C45 /* HomeViewModel.swift in Sources */,
+				EB00AFDA2818098B00270C45 /* PostListView.swift in Sources */,
+				EB00AFCD2817E4CD00270C45 /* UserCard.swift in Sources */,
+				EB00AFC52817CA5500270C45 /* APIService.swift in Sources */,
+				EB00AFC32817C86C00270C45 /* PostModel.swift in Sources */,
+				EB00AFC12817C81E00270C45 /* UserModel.swift in Sources */,
+				EB00AF8E2817B73300270C45 /* DemoTanvirMVVMApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB00AF962817B73500270C45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB00AF9F2817B73500270C45 /* DemoTanvirMVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB00AFA02817B73500270C45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB00AFA92817B73500270C45 /* DemoTanvirMVVMUITests.swift in Sources */,
+				EB00AFAB2817B73500270C45 /* DemoTanvirMVVMUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB00AF9C2817B73500270C45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB00AF892817B73300270C45 /* DemoTanvirMVVM */;
+			targetProxy = EB00AF9B2817B73500270C45 /* PBXContainerItemProxy */;
+		};
+		EB00AFA62817B73500270C45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB00AF892817B73300270C45 /* DemoTanvirMVVM */;
+			targetProxy = EB00AFA52817B73500270C45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EB00AFAC2817B73500270C45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB00AFAD2817B73500270C45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB00AFAF2817B73500270C45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoTanvirMVVM/Preview Content\"";
+				DEVELOPMENT_TEAM = K924X73642;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoTanvirMVVM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThirdRockDen.DemoTanvirMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB00AFB02817B73500270C45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoTanvirMVVM/Preview Content\"";
+				DEVELOPMENT_TEAM = K924X73642;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoTanvirMVVM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThirdRockDen.DemoTanvirMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB00AFB22817B73500270C45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K924X73642;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThirdRockDen.DemoTanvirMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoTanvirMVVM.app/DemoTanvirMVVM";
+			};
+			name = Debug;
+		};
+		EB00AFB32817B73500270C45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K924X73642;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThirdRockDen.DemoTanvirMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoTanvirMVVM.app/DemoTanvirMVVM";
+			};
+			name = Release;
+		};
+		EB00AFB52817B73500270C45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K924X73642;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThirdRockDen.DemoTanvirMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DemoTanvirMVVM;
+			};
+			name = Debug;
+		};
+		EB00AFB62817B73500270C45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K924X73642;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThirdRockDen.DemoTanvirMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DemoTanvirMVVM;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB00AF852817B73300270C45 /* Build configuration list for PBXProject "DemoTanvirMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB00AFAC2817B73500270C45 /* Debug */,
+				EB00AFAD2817B73500270C45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB00AFAE2817B73500270C45 /* Build configuration list for PBXNativeTarget "DemoTanvirMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB00AFAF2817B73500270C45 /* Debug */,
+				EB00AFB02817B73500270C45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB00AFB12817B73500270C45 /* Build configuration list for PBXNativeTarget "DemoTanvirMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB00AFB22817B73500270C45 /* Debug */,
+				EB00AFB32817B73500270C45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB00AFB42817B73500270C45 /* Build configuration list for PBXNativeTarget "DemoTanvirMVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB00AFB52817B73500270C45 /* Debug */,
+				EB00AFB62817B73500270C45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB00AF822817B73300270C45 /* Project object */;
+}
