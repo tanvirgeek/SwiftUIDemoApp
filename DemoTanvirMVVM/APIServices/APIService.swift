@@ -12,7 +12,7 @@ class APIService{
     
     private static let session = URLSession.shared
     
-    //New way Async throws
+    //New way Async throws iOS 15
     static func getRequestAsync<T:Decodable>(url:String) async throws -> T {
         
         print("debug: ",url)

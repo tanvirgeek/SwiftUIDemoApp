@@ -16,7 +16,7 @@ struct UserModel: Codable,Identifiable {
     let address: Address
     let phone, website: String
     let company: Company
-    let test:String
+    //let test:String
 }
 
 // MARK: - Address

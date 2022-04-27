@@ -26,6 +26,7 @@ class PostListViewModel:ObservableObject{
         }
     }
     
+    // New Async
     @MainActor
     func fetchPostsAsync() async{
         isLoading = true
@@ -41,6 +42,7 @@ class PostListViewModel:ObservableObject{
         }
     }
     
+    // Old way, completion handler
     func fetchPosts(){
         isLoading = true
         APIService.getRequest(urlString: EndPointSouce.getEndPoint(type: .usersPosts(userId: userID ?? 1))) { (result: Result<[PostModel],NetworkingError>) in

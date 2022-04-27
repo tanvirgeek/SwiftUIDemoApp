@@ -29,6 +29,12 @@
 		EB00AFDA2818098B00270C45 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFD92818098B00270C45 /* PostListView.swift */; };
 		EB00AFDC281809D500270C45 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFDB281809D500270C45 /* PostListViewModel.swift */; };
 		EB00AFDE28180F1B00270C45 /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFDD28180F1B00270C45 /* PostCard.swift */; };
+		EB00AFE2281950A000270C45 /* UserlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFE1281950A000270C45 /* UserlistView.swift */; };
+		EB00AFE42819746300270C45 /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFE32819746300270C45 /* TopicModel.swift */; };
+		EB00AFE628197D0600270C45 /* AppHomeCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFE528197D0600270C45 /* AppHomeCardButton.swift */; };
+		EB00AFE828197F6400270C45 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFE728197F6300270C45 /* CustomCorners.swift */; };
+		EB00AFEA281985D100270C45 /* HeaderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFE9281985D100270C45 /* HeaderCard.swift */; };
+		EB00AFEC28199E9500270C45 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB00AFEB28199E9500270C45 /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,12 @@
 		EB00AFD92818098B00270C45 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		EB00AFDB281809D500270C45 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		EB00AFDD28180F1B00270C45 /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
+		EB00AFE1281950A000270C45 /* UserlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserlistView.swift; sourceTree = "<group>"; };
+		EB00AFE32819746300270C45 /* TopicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
+		EB00AFE528197D0600270C45 /* AppHomeCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHomeCardButton.swift; sourceTree = "<group>"; };
+		EB00AFE728197F6300270C45 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
+		EB00AFE9281985D100270C45 /* HeaderCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCard.swift; sourceTree = "<group>"; };
+		EB00AFEB28199E9500270C45 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,9 +185,10 @@
 		EB00AFB72817B74600270C45 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EB00AFBE2817B7A200270C45 /* Shared */,
+				EB00AFBE2817B7A200270C45 /* Components */,
 				EB00AFC82817CF3E00270C45 /* HomeView.swift */,
 				EB00AFD92818098B00270C45 /* PostListView.swift */,
+				EB00AFE1281950A000270C45 /* UserlistView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +198,7 @@
 			children = (
 				EB00AFC02817C81E00270C45 /* UserModel.swift */,
 				EB00AFC22817C86C00270C45 /* PostModel.swift */,
+				EB00AFE32819746300270C45 /* TopicModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				EB00AFD42817F30500270C45 /* Bundle+Decoding.swift */,
+				EB00AFEB28199E9500270C45 /* View+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -229,13 +244,16 @@
 			path = EndPoints;
 			sourceTree = "<group>";
 		};
-		EB00AFBE2817B7A200270C45 /* Shared */ = {
+		EB00AFBE2817B7A200270C45 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				EB00AFCC2817E4CD00270C45 /* UserCard.swift */,
+				EB00AFE528197D0600270C45 /* AppHomeCardButton.swift */,
 				EB00AFDD28180F1B00270C45 /* PostCard.swift */,
+				EB00AFE728197F6300270C45 /* CustomCorners.swift */,
+				EB00AFE9281985D100270C45 /* HeaderCard.swift */,
 			);
-			path = Shared;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		EB00AFCE2817E60400270C45 /* Themes */ = {
@@ -380,10 +398,15 @@
 			files = (
 				EB00AFDC281809D500270C45 /* PostListViewModel.swift in Sources */,
 				EB00AFC72817CB7600270C45 /* EndPoint.swift in Sources */,
+				EB00AFEA281985D100270C45 /* HeaderCard.swift in Sources */,
 				EB00AFD72817F3AE00270C45 /* MockData.swift in Sources */,
+				EB00AFE2281950A000270C45 /* UserlistView.swift in Sources */,
 				EB00AFC92817CF3E00270C45 /* HomeView.swift in Sources */,
+				EB00AFE828197F6400270C45 /* CustomCorners.swift in Sources */,
+				EB00AFE628197D0600270C45 /* AppHomeCardButton.swift in Sources */,
 				EB00AFDE28180F1B00270C45 /* PostCard.swift in Sources */,
 				EB00AFD52817F30500270C45 /* Bundle+Decoding.swift in Sources */,
+				EB00AFEC28199E9500270C45 /* View+Extensions.swift in Sources */,
 				EB00AF902817B73300270C45 /* ContentView.swift in Sources */,
 				EB00AFD02817E61C00270C45 /* AppColors.swift in Sources */,
 				EB00AFCB2817DEB800270C45 /* HomeViewModel.swift in Sources */,
@@ -392,6 +415,7 @@
 				EB00AFC52817CA5500270C45 /* APIService.swift in Sources */,
 				EB00AFC32817C86C00270C45 /* PostModel.swift in Sources */,
 				EB00AFC12817C81E00270C45 /* UserModel.swift in Sources */,
+				EB00AFE42819746300270C45 /* TopicModel.swift in Sources */,
 				EB00AF8E2817B73300270C45 /* DemoTanvirMVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,7 +503,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -533,7 +557,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
