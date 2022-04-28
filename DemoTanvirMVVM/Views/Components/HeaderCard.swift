@@ -18,6 +18,7 @@ struct HeaderCard: View {
                     .foregroundColor(AppColors.green)
                     .bold()
                 Text("Hire ME")
+                    .animation(.easeInOut(duration: 0.5), value: largeHeader)
                     .font(largeHeader ? .largeTitle.bold() : .callout.bold())
             }.frame(maxWidth:.infinity,alignment: .leading)
             
@@ -36,7 +37,7 @@ struct HeaderCard: View {
 
 
         }.padding(.horizontal)
-            .animation(.easeInOut(duration: 0.5), value: largeHeader)
+        .animation(.easeInOut(duration: 0.5), value: largeHeader)
     }
 }
 

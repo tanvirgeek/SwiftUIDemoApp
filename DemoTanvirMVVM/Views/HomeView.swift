@@ -52,21 +52,13 @@ struct HomeView: View {
                     }
                 )
             }.coordinateSpace(name: "1")
-            .opacity(showDetail ? 0.01 : 1)
+            .opacity(showDetail ? 0 : 1)
             .overlay{
                 if let currentTopic = currentTopic,showDetail {
                     DetailView(topic: currentTopic)
                         .ignoresSafeArea(.container,edges: .top)
                 }
             }
-            .background(alignment: .top, content: {
-                RoundedRectangle(cornerRadius: 15, style: .continuous)
-                    .fill(.gray)
-                    .frame(height:animateView ? nil : 350,alignment: .top)
-                    .scaleEffect(animateView ? 1 : 0.93)
-                    .opacity(animateView ? 1 : 0)
-                    .ignoresSafeArea()
-            })
             .navigationBarHidden(true)
 
         }
@@ -95,14 +87,13 @@ struct HomeView: View {
         .matchedGeometryEffect(id: topic.id, in: animation)
     }
     
-    @ViewBuilder
     func DetailView(topic:TopicModel)->some View{
         ScrollView(.vertical, showsIndicators: false) {
-            VStack{
+            VStack(alignment:.leading){
                 AppHomeDetail(imageName: topic.bg, bannerTitle: topic.bannerTitle, description: topic.SkillDescription, scrollOffset: $scrollOffset)
                     .scaleEffect(animateView ? 1 : 0.93)
-            }//.offset(y:scrollOffset > 0 ? -scrollOffset : 0)
-                //.offset(offset: $scrollOffset)
+            }.offset(y:scrollOffset > 0 ? -scrollOffset : 0)
+            .offset(offset: $scrollOffset)
         }
         .coordinateSpace(name: "SCROLL")
         .matchedGeometryEffect(id: topic.id, in: animation)
@@ -111,6 +102,13 @@ struct HomeView: View {
                 animateView = true
             }
         }
+        
+            .background(alignment: .top, content: {
+                RoundedRectangle(cornerRadius: 15, style: .continuous)
+                    .fill(AppColors.black.opacity(0.8))
+                    .edgesIgnoringSafeArea(.bottom)
+            })
+       
         .overlay(alignment:.topTrailing,content: {
             Button {
                 withAnimation(.interactiveSpring(response: 0.6, dampingFraction: 0.7, blendDuration: 0.7)) {

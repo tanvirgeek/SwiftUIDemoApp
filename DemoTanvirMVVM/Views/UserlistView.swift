@@ -24,7 +24,7 @@ struct UserlistView: View {
         },message:{
             Text(vm.errorMessage)
         })
-        .navigationTitle("Users")
+        .navigationTitle("Network Call, Users")
         .listStyle(.plain)
     }
 }

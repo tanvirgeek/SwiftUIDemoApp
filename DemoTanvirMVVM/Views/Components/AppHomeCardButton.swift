@@ -26,11 +26,11 @@ struct AppHomeCardButton: View {
                             .resizable()
                             .frame(width:size.width,height: size.height)
                             .aspectRatio(contentMode: .fit)
-                            .clipShape(CustomCorner(corners: [.topLeft,.topRight], radius: 20))
+                            .clipShape(CustomCorner(corners: [.topLeft,.topRight], radius: 15))
                     }.frame(height: 300)
                     
-                    LinearGradient(colors: [.black.opacity(0.5),.black.opacity(0.2),.clear], startPoint: .top, endPoint: .bottom)
-                        .clipShape(CustomCorner(corners: [.topLeft,.topRight], radius: 20))
+                    LinearGradient(colors: [.black.opacity(0.3),.black.opacity(0.1),.clear], startPoint: .top, endPoint: .bottom)
+                        .clipShape(CustomCorner(corners: [.topLeft,.topRight], radius: 15))
                 }
             }
         }.buttonStyle(ScaleButtonStyle())
@@ -59,19 +59,21 @@ struct AppHomeDetail: View {
                         .clipShape(CustomCorner(corners: [.topLeft,.topRight], radius: 20))
                 }.frame(height: 300)
                 
-                LinearGradient(colors: [.black.opacity(0.5),.black.opacity(0.2),.clear], startPoint: .top, endPoint: .bottom)
-                    .clipShape(CustomCorner(corners: [.topLeft,.topRight], radius: 20))
+                LinearGradient(colors: [.black.opacity(0.3),.black.opacity(0.1),.clear], startPoint: .top, endPoint: .bottom)
+                    .clipShape(CustomCorner(corners: [.topLeft,.topRight], radius: 15))
             }
             
-            Text(description)
-                .font(.body)
-                .multilineTextAlignment(.leading)
-                .padding()
-                .lineSpacing(10)
-                //.offset(y:scrollOffset > 0 ? -scrollOffset:0)
-            
-            
+                Text(description)
+                    .font(.body)
+                    .foregroundColor(AppColors.white.opacity(0.8))
+                    .multilineTextAlignment(.leading)
+                    .padding()
+                    .offset(y:scrollOffset > 0 ? scrollOffset : 0)
+                    .lineSpacing(5)
+                    .frame(maxWidth:.infinity,alignment: .leading)
+                    
         }.buttonStyle(ScaleButtonStyle())
+            
         
         
     }

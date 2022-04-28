@@ -18,10 +18,13 @@ struct TopicModel:Identifiable{
 }
 
 let topics:[TopicModel] = [
-    TopicModel(skillName: "SwiftUI", SkillDescription: "I make custom animation. Reusable Components. Matched Geometry Effect", experience: "3 yrs", logo: "SwiftUI", bannerTitle: "SwiftUI Wizard", bg: "SwiftUI"),
-    TopicModel(skillName: "MVVM", SkillDescription: "I follow MVVM Architechture", experience: "3 yrs", logo: "MVVM", bannerTitle: "MVVM Mastro", bg: "mvvm-1"),
-    TopicModel(skillName: "Components", SkillDescription: "I make Small Components", experience: "3 yrs", logo: "components", bannerTitle: "SwiftUI Wizard", bg: "components"),
-    TopicModel(skillName: "Swift", SkillDescription: "Read Swift Documentation", experience: "3 yrs", logo: "swift", bannerTitle: "Swift is my one true love", bg: "swift"),
-    TopicModel(skillName: "Async Await", SkillDescription: "Async await network calls sinch iOS 15", experience: "2 years", logo: "async", bannerTitle: "Async Await is Awesome", bg: "async"),
-    TopicModel(skillName: "Hire Me Please", SkillDescription: "You should hire me because your will love to work with me", experience: "3 yrs", logo: "hireme", bannerTitle: "Hire Me", bg: "hireme")
+    TopicModel(skillName: "SwiftUI", SkillDescription: "I have been makin SwiftUI apps since 2019. I am not only very passionate about swiftUI but also did the hours of practice everyday to master my skill for 3 years.", experience: "3 yrs", logo: "sw", bannerTitle: "SwiftUI Wizard", bg: "sw"),
+    TopicModel(skillName: "MVVM", SkillDescription: " I took an Udemy course from a fortune five hundred software engineer. I learned MVVM architechture from him.", experience: "3 yrs", logo: "mvvmarc", bannerTitle: "MVVM Mastro", bg: "mvvmarc"),
+    TopicModel(skillName: "WWDC", SkillDescription: "Watching WWDC videos is one of my favourite passtime. I learned from apple developers which no one from youtube can teach me.", experience: "3 yrs", logo: "wwdc", bannerTitle: "WWDC lover", bg: "wwdc"),
+    TopicModel(skillName: "Reusabe Components", SkillDescription: "I do not make large views. All my my views consist of small components which are reusabel. I use previews all the time to change my design. Previews are for every views so I use mockdata for previews", experience: "3 yrs", logo: "rc", bannerTitle: "MVVM Mastro", bg: "rc"),
+    TopicModel(skillName: "Async Await", SkillDescription: "Ever since the release of Async Await I use them. It makes codes readable and less hustle to understand. This is so cool", experience: "3 yrs", logo: "async", bannerTitle: "SwiftUI Wizard", bg: "async"),
+    TopicModel(skillName: "Combine", SkillDescription: "I read combine documentation and books. I also practice network call with combine and use combine when necessary.", experience: "3 yrs", logo: "combine", bannerTitle: "Combine", bg: "combine"),
+    TopicModel(skillName: "AR", SkillDescription: "I made augmented reality app. I read apple developers code. I did and AR project for my previous company and they loved my works.", experience: "3 yrs", logo: "ar", bannerTitle: "AR", bg: "ar"),
+    TopicModel(skillName: "Hire ME", SkillDescription: "You should hire me. I have over three years of experience and I am communicative and love music, guitar.", experience: "3 yrs", logo: "hm", bannerTitle: "WWDC lover", bg: "hm"),
+    TopicModel(skillName: "SP", SkillDescription: "We are commited to protect the planet by whatever we can do.", experience: "3 yrs", logo: "sp", bannerTitle: "sp", bg: "sp"),
 ]
