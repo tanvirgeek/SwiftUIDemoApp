@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 class PostListViewModel:ObservableObject{
     @Published var posts = [PostModel]()
@@ -13,20 +14,35 @@ class PostListViewModel:ObservableObject{
     @Published var showAlert = false
     @Published var errorMessage =  ""
     
-    init(){
-        
+    var cancellables = Set<AnyCancellable>()
+    
+    let service:PostsGetable
+    
+    // MARK: - With Combine and Dependency Injection for Testing. Protocol Oriented Way, Check Unit Testing Files
+    init(service:PostsGetable = PostsService(networkRequest: APIServiceCombine(), environment:.development )){
+        self.service = service
+        getPostsByCombineAndServiceProtocol()
     }
     
-    var userID : Int? {
-        didSet{
-            Task{
-                await fetchPostsAsync()
+    func getPostsByCombineAndServiceProtocol(){
+        service.getPosts()
+            .sink { [weak self] completion in
+                switch completion{
+                case .finished:
+                    print("debug: well done Posts")
+                case .failure(let failMessage):
+                    self?.showAlert = true
+                    self?.errorMessage = "\(failMessage.localizedDescription)"
+                }
+                
+                print("debug: Something is wrong while fetchin Users, Contact to developer, \(completion)")
+            } receiveValue: { [weak self] users in
+                self?.posts = users
             }
-            //fetchPosts()
-        }
+            .store(in: &cancellables)
     }
     
-    // New Async
+    // Async Await
     @MainActor
     func fetchPostsAsync() async{
         isLoading = true
@@ -63,11 +79,21 @@ class PostListViewModel:ObservableObject{
             }
         }
     }
+    
+    var userID : Int? {
+        didSet{
+            Task{
+                await fetchPostsAsync()
+            }
+            //fetchPosts()
+        }
+    }
 }
 
+// for preview
 extension PostListViewModel{
     convenience init(forPreview:Bool = false) {
-        self.init()
+        self.init(service:PostsService(networkRequest: APIServiceCombine(), environment:.development))
         if forPreview{
             self.posts = PostModel.mockPosts
         }

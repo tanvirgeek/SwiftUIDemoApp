@@ -7,8 +7,8 @@
 
 import Foundation
 
-import Foundation
 
+// OLD WAY, Check better way in AppEndpoints file
 enum EndPoint {
     case Base,users,posts,usersPosts(userId:Int)
 }

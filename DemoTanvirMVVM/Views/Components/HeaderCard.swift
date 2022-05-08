@@ -13,11 +13,11 @@ struct HeaderCard: View {
     var body: some View {
         HStack(alignment:.bottom){
             VStack(alignment:.leading,spacing: 8){
-                Text("Expert iOS Developer")
+                Text("Expert iOS Developer, tanvirgeek(skype)")
                     .font(.callout)
                     .foregroundColor(AppColors.green)
                     .bold()
-                Text("Hire ME")
+                Text("Hire ME, Click the Cards Below")
                     .animation(.easeInOut(duration: 0.5), value: largeHeader)
                     .font(largeHeader ? .largeTitle.bold() : .callout.bold())
             }.frame(maxWidth:.infinity,alignment: .leading)

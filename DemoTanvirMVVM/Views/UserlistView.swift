@@ -9,7 +9,7 @@ import SwiftUI
 
 struct UserlistView: View {
     // make forPreview to true for fixing UI issues in the preview
-    @StateObject private var vm = HomeViewModel(forPreview: false)
+    @StateObject private var vm = UsersViewModel(forPreview: false)
     
     var body: some View {
         List(vm.users, id:\.id) { user in

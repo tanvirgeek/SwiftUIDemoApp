@@ -6,13 +6,39 @@
 //
 
 import Foundation
+import Combine
 
-//Generic Network Calls
+
+
+// MARK: - Old Way, Without Protocol, Please check APIServiceCombine file for Protocol Oriented Way
+// MARK: - Old Way, Now I use protocol oriented way by Combine and Service layer, Please check APIServiceCombine file
 class APIService{
     
     private static let session = URLSession.shared
     
-    //New way Async throws iOS 15
+    //Combine, Generic API call
+    //1. Create the publisher
+    //2. Subscribe to publisher on Background Thread
+    //3. Recieve on main thread
+    //4. trymap (make sure the data is good)
+    //5. Decode data into model
+    static func getRequestWithCombine<T: Decodable>(ofUrl urlString: String,as type: T.Type,decodedBy decoder: JSONDecoder = JSONDecoder()) -> AnyPublisher<T, Error> {
+        
+        guard let url = URL(string: urlString) else {
+            let error = URLError(.badURL, userInfo: [NSURLErrorKey: urlString])
+            return Fail(error: error).eraseToAnyPublisher()
+        }
+        
+        return URLSession.shared
+            .dataTaskPublisher(for: url)
+            .receive(on: DispatchQueue.main)
+            .tryMap { result -> T in
+                return try decoder.decode(T.self, from: result.data)
+            }
+            .eraseToAnyPublisher()
+    }
+        
+    // Async throws iOS 15
     static func getRequestAsync<T:Decodable>(url:String) async throws -> T {
         
         print("debug: ",url)
